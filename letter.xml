@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<letter xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>AsciiDoc Article Title</title>
+<date>July 29, 2014, Asciidoctor 1.5 article template</date>
+<author>
+<personname>
+<firstname>Firstname</firstname>
+<surname>Lastname</surname>
+</personname>
+<email>author@asciidoctor.org</email>
+</author>
+<authorinitials>FL</authorinitials>
+<revhistory>
+<revision>
+<revnumber>1.0</revnumber>
+<date>July 29, 2014, Asciidoctor 1.5 article template</date>
+<authorinitials>FL</authorinitials>
+</revision>
+</revhistory>
+</info>
+<letterinfo>
+<sender>
+	<personname>Max Mustermann</personname>
+	<address>
+		<street>Heidestrasse 17</street>
+		<postcode>51147</postcode>
+		<city>Köln</city>
+		<phone>+49 123 456 7890</phone>
+		<fax>+49 123 4567 4711</fax>
+		<email>max@example.com</email>
+	</address>
+	<footer-info>
+		<para>
+		Bankverbindung: Bank in Köln, Kto 123
+		</para>
+	</footer-info>
+</sender>
+<recipient>
+	<orgname>Mustermann GmbH</orgname>
+	<personname>Erika Gabler</personname>
+	<address>
+		<street>Hauptstr. 12</street>
+		<postcode>45678</postcode>
+		<city>Musterstadt</city>
+		<country>Deutschland</country>
+	</address>
+</recipient>
+
+<date>17.01.2016</date>
+<subjectterm>Test</subjectterm>
+<salutation>Sehr geehrte Frau Gabler,</salutation>
+<closing>Mit freundlichen Grüßen</closing>
+</letterinfo>
+<simpara>Content entered directly below the header but before the first section heading is called the preamble.</simpara>
+<section xml:id="_first_level_heading">
+<title>First level heading</title>
+<simpara>This is a paragraph with a <emphasis role="strong">bold</emphasis> word and an <emphasis>italicized</emphasis> word.</simpara>
+<figure>
+<title>A caterpillar</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="caterpillar.svg"/>
+</imageobject>
+<textobject><phrase>I am the image alt text.</phrase></textobject>
+</mediaobject>
+</figure>
+<simpara>This is another paragraph.<footnote><simpara>I am footnote text and will be rendered at the bottom of the article.</simpara></footnote></simpara>
+<section xml:id="_second_level_heading">
+<title>Second level heading</title>
+<itemizedlist>
+<title>Unordered list title</title>
+<listitem>
+<simpara>list item 1</simpara>
+<itemizedlist>
+<listitem>
+<simpara>nested list item</simpara>
+<itemizedlist>
+<listitem>
+<simpara>nested nested list item 1</simpara>
+</listitem>
+<listitem>
+<simpara>nested nested list item 2</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>list item 2</simpara>
+</listitem>
+</itemizedlist>
+<simpara>This is a paragraph.</simpara>
+<example>
+<title>Example block title</title>
+<simpara>Content in an example block is subject to normal substitutions.</simpara>
+</example>
+<sidebar>
+<title>Sidebar title</title>
+<simpara>Sidebars contain aside text and are subject to normal substitutions.</simpara>
+</sidebar>
+<section xml:id="_third_level_heading">
+<title>Third level heading</title>
+<formalpara xml:id="id-for-listing-block">
+<title>Listing block title</title>
+<para>
+<screen>Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.</screen>
+</para>
+</formalpara>
+<section xml:id="_fourth_level_heading">
+<title>Fourth level heading</title>
+<table frame="all" rowsep="1" colsep="1">
+<title>Table title</title>
+<tgroup cols="2">
+<colspec colname="col_1" colwidth="50*"/>
+<colspec colname="col_2" colwidth="50*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Column heading 1</entry>
+<entry align="left" valign="top">Column heading 2</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara>Column 1, row 1</simpara></entry>
+<entry align="left" valign="top"><simpara>Column 2, row 1</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Column 1, row 2</simpara></entry>
+<entry align="left" valign="top"><simpara>Column 2, row 2</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<section xml:id="_fifth_level_heading">
+<title>Fifth level heading</title>
+<blockquote>
+<attribution>
+firstname lastname
+<citetitle>movie title</citetitle>
+</attribution>
+<simpara>I am a block quote or a prose excerpt.
+I am subject to normal substitutions.</simpara>
+</blockquote>
+<blockquote>
+<attribution>
+firstname lastname
+<citetitle>poem title and more</citetitle>
+</attribution>
+<literallayout>I am a verse block.
+  Indents and endlines are preserved in verse blocks.</literallayout>
+</blockquote>
+</section>
+</section>
+</section>
+</section>
+</section>
+<section xml:id="_first_level_heading_2">
+<title>First level heading</title>
+<tip>
+<simpara>There are five admonition labels: Tip, Note, Important, Caution and Warning.</simpara>
+</tip>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>ordered list item</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>nested ordered list item</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>ordered list item</simpara>
+</listitem>
+</orderedlist>
+<simpara>The text at the end of this sentence is cross referenced to <link linkend="_third_level_heading">the third level heading</link></simpara>
+</section>
+<section xml:id="_first_level_heading_3">
+<title>First level heading</title>
+<simpara>This is a link to the <link xl:href="http://asciidoctor.org/docs/user-manual/">Asciidoctor User Manual</link>.
+This is an attribute reference <link xl:href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/">which links this text to the Asciidoctor Quick Reference Guide</link>.
+Hello Skat.<footnote><simpara>I am another footnote text and will be rendered at the bottom of the article.</simpara></footnote></simpara>
+</section>
+</letter>

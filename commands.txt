@@ -1,0 +1,10 @@
+> docker run -it -v /c/Users/staufferr/asciidoctor:/documents asciidoctor/docker-asciidoctor
+
+If you are using Docker Machine on Mac or Windows, your Docker daemon only has limited access to your OS X/ Windows filesystem.
+Docker Machine tries to auto-share your /Users (OS X) or c:\Users (Windows) directory - and so you can only mount files or directories from there.
+All other paths, if mounted, come from your virtual machine’s filesystem.
+
+Links
+-----
+
+https://github.com/skaterkamp/docbook-letter
